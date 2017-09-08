@@ -1,0 +1,4 @@
+C:\Sandbox\ToastThis\ToastThis\ToastContracts\bin\Debug\ToastContracts.dll
+C:\Sandbox\ToastThis\ToastThis\ToastContracts\bin\Debug\ToastContracts.pdb
+C:\Sandbox\ToastThis\ToastThis\ToastContracts\obj\Debug\ToastContracts.dll
+C:\Sandbox\ToastThis\ToastThis\ToastContracts\obj\Debug\ToastContracts.pdb
