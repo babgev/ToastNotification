@@ -1,0 +1,62 @@
+﻿<Window x:Class="ToastThis.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ToastThis"
+        Background="Black"
+        mc:Ignorable="d"
+        Title="Toast Notification" Height="150" Width="285"
+        DataContext="{Binding Main, Source={StaticResource Locator}}" >
+    
+    <Grid Margin="15">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition />
+        </Grid.RowDefinitions>
+
+        <StackPanel Orientation="Horizontal"
+                    Grid.Row="0"
+                    HorizontalAlignment="Right">
+            <Button x:Name="btnOne"
+                    Content="Failed"
+                    HorizontalAlignment="Right"
+                    VerticalAlignment="Center"
+                    IsDefault="True" 
+                    Command="{Binding OnErrorClicked}"
+                    Background="Red"
+                    Height="30"
+                    Padding="10,1"    
+                    FontWeight="Bold"
+                    MinWidth="75"
+                    Margin="0,0,10,0" />
+            <Button x:Name="btnTwo"
+                    Content="Warning"
+                    HorizontalAlignment="Right"
+                    VerticalAlignment="Center"
+                    IsDefault="True"
+                    Command="{Binding OnWarningClicked}"
+                    Background="Yellow"
+                    Height="30"
+                    Padding="10,1"    
+                    FontWeight="Bold"
+                    MinWidth="75"
+                    Margin="0,0,10,0"
+                    Tag="&#xf00c;" />
+            <Button x:Name="btnThree"
+                    Content="Success"
+                    HorizontalAlignment="Right"
+                    VerticalAlignment="Center"
+                    Command="{Binding OnSuccessClicked}"
+                    Background="LightGreen"
+                    Foreground="Black"    
+                    FontWeight="Bold"
+                    Height="30"
+                    Padding="10,1"
+                    MinWidth="75" />
+        </StackPanel>
+    </Grid>
+</Window>
